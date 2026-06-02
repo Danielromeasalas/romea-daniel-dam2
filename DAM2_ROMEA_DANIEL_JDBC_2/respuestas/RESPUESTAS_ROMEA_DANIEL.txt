@@ -1,0 +1,14 @@
+1) Explica cómo funciona la relación 1:N entre Agencia y Satelite tanto en SQL como en Java.
+
+Cada satelite esta asociado a una agencia, y no puede ser a mas de una. Sin embargo una agencia puede estar asociada a varios satelites. Esto funciona de forma que en la clase satelite hay una atributo de Agencia (ya que solo puede
+tener una). En SQL, en la tabla satélite hay una columna de agencia, que tendrá la id de la agencia a la que esta sociada y se relaciona mediante una foreign key a la tabla Agenica.
+
+2) Explica por qué en Java utilizamos: private Agencia agencia; y no: private int agenciaId;
+
+En java utilizamos private Agenica agencia ya que queremos que se relacione directamente con una Agencia que ya hemos creado, y java nos permite hacerlo si creamos un atributo de clase Agencia. Si utilizaramos int agenciaId (que
+es como funciona en SQL) haria el código mucho menos limpio y sencillo.
+
+3) Explica qué ventaja aporta PreparedStatement frente a concatenar SQL manualmente.
+
+Usar PreparedStatement es una gran ventaja ya que, por ejemplo, si queremos hacer varios inserts, solo hay que cambiar los valores de las nuevas entradas, y el resto se mantiene igual en todos los inserts, lo mismo ocurre con las demas
+funciones. De forma que si usamos un PreparedStatement podemos hacer varias acciones mucho mas rápido y de forma mas sencilla, ya que solo tendriamos que cambiar algunos valores.
