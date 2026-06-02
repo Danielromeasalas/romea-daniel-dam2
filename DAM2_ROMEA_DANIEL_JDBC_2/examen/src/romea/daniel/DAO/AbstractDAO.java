@@ -14,7 +14,4 @@ public abstract class AbstractDAO<T> implements DAO<T>{
         System.out.println("[ERROR] " + e.getMessage());
     }
 
-    public abstract ArrayList<T> findByCentro(int id_centro);
-    public abstract T findWithInforme(int id_informe);
-
 }
