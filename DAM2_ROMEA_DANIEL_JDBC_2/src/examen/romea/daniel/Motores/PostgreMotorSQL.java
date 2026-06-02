@@ -1,10 +1,10 @@
-package romea.daniel.Motores;
+package src.examen.romea.daniel.Motores;
 
 import java.sql.DriverManager;
 
 public class PostgreMotorSQL extends MotorSQL {
 
-    private static final String URL = "jdbc:postgresql://bd-repaso-examen-1.cbhuovkoeofz.us-east-1.rds.amazonaws.com:5432/postgres";
+    private static final String URL = "jdbc:postgresql://romea-daniel-dam3.cbhuovkoeofz.us-east-1.rds.amazonaws.com:5432/postgres";
     private static final String USER = "postgres";
     private static final String PASSWORD = "12345678";
     private static final String DRIVER = "org.postgresql.Driver";

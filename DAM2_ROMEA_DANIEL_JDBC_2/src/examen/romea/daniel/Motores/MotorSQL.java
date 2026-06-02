@@ -1,4 +1,4 @@
-package romea.daniel.Motores;
+package src.examen.romea.daniel.Motores;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

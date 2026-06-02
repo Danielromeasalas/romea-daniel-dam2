@@ -1,6 +1,7 @@
-package romea.daniel.Motores;
+package src.examen.romea.daniel.Motores;
 
-import romea.daniel.Motores.PostgreMotorSQL;
+import src.examen.romea.daniel.Motores.MotorSQL;
+import src.examen.romea.daniel.Motores.PostgreMotorSQL;
 
 public class MotorFactory {
 
